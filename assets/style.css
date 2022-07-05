@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --dark: #242c42;
+    --blue: #4e74f9;
+    --dark-blue: #1c2e6c;
+    --dark-light: #4f5162;
+    --white: #fff;
+    --black: #000;
+}
+
+.row {
+    margin: 0;
+}
+
+/* components  */
+
+.navbar-toggler{
+    font-size: 2.1rem;
+}
+
+/* aos cursor  */
+.typed-cursor {
+    display: none;
+}
+
+.stickyNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: var(--white);
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.subHeading {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--dark);
+    text-transform: capitalize;
+}
+
+.para {
+    font-size: 1.55rem;
+    color: var(--dark-light);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 100%;
+}
+
+.sectionTopic {
+    font-size: 1.6rem;
+    color: var(--black);
+}
+
+.bg-footer {
+    background-image: linear-gradient(135deg, #6f42c1 0%, #4582EC 100%);
+}
+
+
+
+
+/* components  */
+
+/* navbar  */
+.navbar {
+    font-size: 1.9rem;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+/* hero  */
+.header-hero {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-hero {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.heading-blue {
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.main-para {
+    font-size: 1.8rem;
+    width: 45%;
+    color: var(--dark-light);
+}
+
+/* .cta-group{
+    border: 2px solid black;
+} */
+.btn {
+    font-size: 1.6rem;
+    padding: 0.9rem 1.5rem;
+}
+
+.btn-bg {
+    background-color: var(--blue);
+    color: var(--white);
+
+}
+
+.btn-bg-transparent {
+    border: 1.5px solid var(--blue);
+    color: var(--blue);
+}
+
+/* 
+.topicBx {
+    border: 2px solid black;
+} */
+
+.topicsList {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.topic {
+    border: 0.8px solid var(--dark-light);
+    border-radius: 5rem;
+    text-decoration: none;
+    /* color: var(--black); */
+    color: var(--blue);
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding: 0.7rem 1.4rem;
+    transition: all 0.3s ease-in;
+}
+
+.topic:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.aboutbx {
+    background-color: var(--dark-blue);
+    padding: 1rem;
+}
+
+.aboutbx .sectionLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutbx .subHeading {
+    color: var(--white);
+}
+
+.aboutbx .sectionTopic,
+.aboutbx .para {
+    color: #ffffffb5;
+}
+
+.aboutbx .sectionRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionRight img {
+    width: 65%;
+}
+
+
+
+.courseCard a {
+    /* border: 2px solid black; */
+    text-decoration: none;
+
+}
+
+
+.courseCard .courseCard-body img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+/* .courseCard-details{
+    border: 2px solid navy;
+} */
+.courseTitle {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+
+.courseType {
+    background-color: #397eff2f;
+    color: #397DFF;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    padding: 7px 15px;
+}
+
+.courseDetails {
+    font-size: 1.4rem;
+    color: var(--dark-light);
+}
+
+.speclbx{
+    padding: 1rem;
+}
+.speclbx .sectionRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speclbx .sectionLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quality-Items li i {
+    color: green;
+    font-size: 2.3rem;
+}
+
+.reviewBx {
+    padding: 1rem;
+    background-image: url('./img/bg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+}
+
+.reviewList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.reviewItem {
+    border: 0.8px solid var(--blue);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.fa-quote-left {
+    color: var(--blue);
+    font-size: 2.2rem;
+}
+
+.feedbackMsg {
+    color: var(--dark-light);
+    font-size: 1.5rem;
+}
+
+.feedbackUser {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.userType {
+    font-size: 1.5rem;
+    color: var(--dark-light);
+}
+
+.rItem-2 {
+    border: 0.8px solid #fead37;
+}
+
+.rItem-2 .feedbackMsg i {
+    color: #fead37;
+}
+
+.rItem-3 {
+    border: 0.8px solid #1cb85b;
+}
+
+.rItem-3 .feedbackMsg i {
+    color: #1cb85b;
+}
+
+/* faq  */
+.faqbx{
+    padding: 1rem;
+}
+.faqList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq-qna {
+    color: var(--black);
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.faq-Show {
+    color: var(--blue);
+}
+
+
+.faq-ans {
+    border-radius: 9px;
+    display: none;
+    border: 1px solid var(--blue);
+}
+
+.faq-ans-show {
+    display: block;
+}
+
+.contactRight {
+    /* border: 2px solid red; */
+    background-color: var(--dark-blue);
+}
+
+/* .contactRight form{
+    border: 2px solid black;
+
+} */
+
+.contactRight form input,
+.contactRight form textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--white);
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(232, 240, 254);
+    background-color: transparent;
+    color: var(--white);
+}
+
+.contact-info {
+    font-size: 1.7rem;
+}
+
+.contact-info a {
+    font-size: 1.6rem;
+}
+
+footer {
+    font-size: 1.55rem;
+}
+
+footer ul li {
+    color: var(--black);
+}
+
+.footer-title {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.footer-list li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.footer-social a i {
+    font-size: 3rem;
+}
+
+.srollTop{
+    background-color: #0B3EF5;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    display: none;
+}
+.srollTop a{
+    text-decoration: none;
+}
+.srollTop a i{
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .header-hero {
+        position: relative;
+        height: 90vh;
+    }
+    #navheader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        background-color: var(--white);
+    }
+
+    .main-heading {
+        font-size: 3.2rem;
+    }
+
+    .main-para {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    .topicsList{
+        padding: 0;
+        margin-top: 2rem;
+    }
+    .topic {
+        font-size: 1.5rem;
+    }
+
+    .aboutbx, .speclbx, .reviewBx, .faqbx{
+        padding: 0;
+    }
+
+    
+    
+    .sectionRight,
+    .sectionLeft {
+        padding-bottom: 3rem;
+    }
+
+    .subHeading {
+        font-size: 2.7rem;
+    }
+
+    .reviewList {
+        width: 100%;
+    }
+
+    .faq-qna {
+        font-size: 2rem;
+    }
+
+    .contact-Section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-Section .sectionLeft {
+        padding: 0 !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .footer-social{
+        display: flex;
+    }
+
+    .srollTop{
+        display: flex;
+    }
+
+}
