@@ -1,3 +1,4 @@
+// auto type 
 var typed = new Typed('.autoType', {
     strings: ['Tech', 'Web Development', 'Programming', 'DESIGNING'],
     typeSpeed: 110,
@@ -6,12 +7,14 @@ var typed = new Typed('.autoType', {
     loop: true
 });
 
+// aos 
+
 AOS.init();
 
 
 $(document).ready(function () {
-    console.log('hello query');
 
+    // sticky nav 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 400) {
@@ -21,15 +24,14 @@ $(document).ready(function () {
         }
     });
 
-
-
+// slick slider 
     $('#allReviews').slick({
         autoplay: true,
         arrows: false,
         infinite: true,
         autoplaySpeed: 1000
     })
-
+// faq drop down 
     $('.faq-qna').click(function () {
         let faqId = $(this).attr('data-faq')
 
@@ -45,11 +47,5 @@ $(document).ready(function () {
 
         $('#faq-ans-' + faqId).toggle('faq-ans-show')
     })
-
-
-
-
-
-
 
 })
